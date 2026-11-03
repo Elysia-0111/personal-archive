@@ -76,6 +76,11 @@
 .course-meta dt { color: #65676c; font-size: 13px; }
 .course-meta dd { margin: 2px 0 0; font-weight: 600; }
 .course-intro p { max-width: 43em; margin: 16px 0 32px; line-height: 1.9; }
+.course-plan { margin-bottom: 32px; border-block: 1px solid #d7d8d3; }
+.course-plan summary { padding: 12px 0; color: #4945ad; cursor: pointer; }
+.course-plan table { width: min(100%, 36rem); margin-bottom: 16px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.course-plan th, .course-plan td { padding: 6px 4px; text-align: left; border-bottom: 1px solid #d7d8d3; }
+.course-plan tbody th { font-weight: 400; }
 .course-materials { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .course-materials p { padding-top: 14px; font-size: 15px; }
 @media (max-width: 620px) {
