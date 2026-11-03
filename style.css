@@ -4,7 +4,7 @@
 
 .hero{padding:36px 0;grid-template-columns:1.5fr 1fr}.hero h1{font-size:clamp(38px,4.6vw,62px)}.hero img{max-width:310px;justify-self:end}
 .study-status{display:flex;align-items:center;gap:16px;padding:16px 20px;background:#ececf8;margin:0 0 32px}.study-status a{margin-left:auto;color:#464197}.study-status span{color:#595d64}
-.subjects{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}.subject{display:block;padding:24px 4px;border-bottom:1px solid #d1d3ce}.subject:hover{background:#efeff8}.subject small,.subject span{color:#534eb3}.subject h3{font-size:24px;margin:5px 0}.subject span{float:right;font-weight:400}.updates,.course-group{margin-top:40px}.updates p{padding:18px 0}.jump{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.jump a{padding:5px 12px;border:1px solid #cbcbe1;color:#4945ad}.course-group{scroll-margin-top:18px}.course-group ul{padding:0;list-style:none;border-top:2px solid}.course-group li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid #d7d8d3}.course-group li small{white-space:nowrap;color:#55595e}
+.subjects{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}.subject{display:block;padding:24px 4px;border-bottom:1px solid #d1d3ce}.subject:hover{background:#efeff8}.subject small,.subject span{color:#534eb3}.subject h3{font-size:24px;margin:5px 0}.subject span{float:right;font-weight:400}.updates,.course-group{margin-top:40px}.updates p{padding:18px 0}.jump{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.jump a{padding:5px 12px;border:1px solid #cbcbe1;color:#4945ad}.course-group{scroll-margin-top:18px}
 @media(max-width:700px){.hero{grid-template-columns:1fr}.hero img{display:none}.subjects{grid-template-columns:1fr}.study-status{flex-wrap:wrap;gap:8px 12px}.study-status a{margin-left:0}.subject{padding:17px 4px}}
 
 .shelf-entry {
@@ -56,43 +56,30 @@
 }
 
 /* Course directory and individual course pages */
-.course-group li { display: block; padding: 0; }
-.course-row {
+.course-group ul {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  align-items: center;
-  gap: 14px;
-  padding: 13px 6px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  border-top: 2px solid #292b32;
 }
-.course-row:hover, .course-row:focus-visible { background: #efeff8; }
-.course-row:hover > span:first-child { color: #4945ad; text-decoration: underline; }
-.choice-note { margin-top: 6px; font-size: 14px; }
+.course-group li { border-bottom: 1px solid #d7d8d3; scroll-margin-top: 18px; }
+.course-row { display: block; padding: 12px 4px; color: #4945ad; }
+.course-row:hover, .course-row:focus-visible { background: #efeff8; text-decoration: underline; text-underline-offset: .2em; }
 .course-detail { padding-top: 32px; }
 .back-track { margin-bottom: 28px; }
 .back-track a { color: #4945ad; }
 .back-track a:hover { text-decoration: underline; }
-.course-detail h1 { font-size: clamp(36px, 5vw, 60px); }
-.course-meta { display: flex; flex-wrap: wrap; gap: 12px 32px; margin: 20px 0 36px; }
-.course-meta dt { color: #65676c; font-size: 13px; }
-.course-meta dd { margin: 2px 0 0; font-weight: 600; }
+.course-detail h1 { font-size: clamp(36px, 5vw, 60px); margin-bottom: 32px; }
 .course-intro p { max-width: 43em; margin: 16px 0 32px; line-height: 1.9; }
-.course-plan { margin-bottom: 32px; border-block: 1px solid #d7d8d3; }
-.course-plan summary { padding: 12px 0; color: #4945ad; cursor: pointer; }
-.course-plan table { width: min(100%, 36rem); margin-bottom: 16px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-.course-plan th, .course-plan td { padding: 6px 4px; text-align: left; border-bottom: 1px solid #d7d8d3; }
-.course-plan tbody th { font-weight: 400; }
 .course-materials { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .course-materials p { padding-top: 14px; font-size: 15px; }
 @media (max-width: 620px) {
-  .course-row { gap: 6px; }
+  .course-group ul { grid-template-columns: 1fr; }
   .course-materials { grid-template-columns: 1fr; gap: 22px; }
-  .course-meta { gap: 12px 22px; }
 }
-
-.group-count { margin-left: .8em; color: #595d64; font-weight: 400; }
-.course-subhead { margin: 26px 0 5px; font-size: 17px; scroll-margin-top: 16px; }
-.subgroup-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0; }
-.subgroup-links a { color: #4945ad; font-size: 14px; text-decoration: underline; text-underline-offset: .2em; }
 
 .collection-entry {
   display: flex;
