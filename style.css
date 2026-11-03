@@ -23,7 +23,7 @@
   gap: 8px 16px;
 }
 .course-links { margin-left: .45em; font-size: 14px; }
-.shelf-shortcuts a, .course-links a, .related a, .repo-link {
+.shelf-shortcuts a, .course-links a, .related a, .repo-link, .collection-list a {
   color: #4945ad;
   text-decoration: underline;
   text-underline-offset: .22em;
