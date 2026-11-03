@@ -23,7 +23,8 @@
     <h1>数据库系统概论</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究数据怎样组织、查询并可靠更新。以一次跨账户转账为例，关系模型描述数据，事务机制帮助保证多次读写的结果一致。</p>
+      <p>数据库系统用关系模型组织数据，用查询语言表达要取得的结果。主键、外键和规范化约束数据之间的关系，索引和查询计划决定访问方式。事务、并发控制与恢复机制进一步处理多方同时修改以及运行中断后的数据一致性。</p>
+      <p>两个人同时预订最后一个座位，若都先读到空位，再分别写入订单，单独看每一步都合理，合起来却会超售。把检查余量与写入订单放进适当隔离的事务，并设置唯一性等约束，能分析冲突发生时哪个操作应当提交、等待或撤销。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

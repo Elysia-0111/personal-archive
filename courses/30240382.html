@@ -23,7 +23,8 @@
     <h1>编译原理</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>沿程序从源代码到目标表示的路径，理解词法分析、语法分析、语义检查和代码生成。一段表达式如何成为语法树，是观察这些阶段的起点。</p>
+      <p>编译器把源程序逐步转成可以执行的表示。词法分析识别标记，语法分析建立结构，语义检查核对名字、作用域和类型。中间表示让优化与目标机器的细节分开，代码生成阶段再决定指令、寄存器和存储位置。</p>
+      <p>表达式 a + b * c 在源文件中只是一串字符，进入语法树后，乘法与加法的先后关系才得到明确表示。若 b 未声明，错误可以在名字解析时被发现。沿着这一行代码向下追踪，还能观察它何时被拆成若干指令，以及哪些中间结果可以复用。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

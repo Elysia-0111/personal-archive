@@ -23,7 +23,8 @@
     <h1>形式语言与自动机</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>用形式语言描述符号串的规则，用自动机描述识别过程。比较不同计算模型可以识别的语言，理解表达能力与所需存储之间的关系。</p>
+      <p>形式语言把一类符号串看成一个集合，自动机则给出逐个读取符号、判断是否接受的过程。正则表达式与有限自动机刻画同一类语言，上下文无关文法和下推自动机能处理更深的嵌套结构。比较这些模型时，核心问题是识别规则需要记住多少信息。</p>
+      <p>判断一个二进制串中出现了奇数个还是偶数个 1，只需在两个状态之间切换。判断任意深度的括号是否配对，则需要跟踪尚未闭合的层数。用这两个问题对照有限状态与栈的能力，还可以进一步讨论哪些问题即使允许更强的计算模型也无法判定。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

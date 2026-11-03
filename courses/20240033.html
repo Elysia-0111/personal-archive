@@ -23,7 +23,8 @@
     <h1>数值分析</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究用有限精度计算近似解的方法。求解方程、拟合函数或计算积分时，需要区分问题本身的敏感性、近似误差和舍入误差。</p>
+      <p>数值分析研究如何用有限次、有限精度的计算近似求解数学问题。求根、插值、数值积分和线性方程组都有不同的误差来源。条件数描述问题对输入扰动有多敏感，算法稳定性则关注计算过程会不会额外放大由舍入等因素造成的误差。</p>
+      <p>用两个邻近点的函数值之差估计导数时，缩小步长最初能改善近似。步长太小，两个非常接近的数相减会丢失有效数字，再除以步长还会放大误差。把误差随步长的变化画出来，可以直观看到截断误差与舍入误差之间的取舍。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

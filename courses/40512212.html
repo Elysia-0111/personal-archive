@@ -23,7 +23,8 @@
     <h1>机器学习在金融中的应用</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>将特征构造、模型训练与评估放到金融数据的时间顺序中理解。做历史预测时，训练阶段是否使用了当时尚不可见的信息，会直接影响对模型表现的判断。</p>
+      <p>机器学习用于金融问题时，首先要明确预测对象、作出判断的时点以及当时可用的信息。特征构造、标签定义和样本切分都必须服从这条时间线。线性模型或树模型可以作为基准，滚动评估用来检验方法跨时期的稳定性。</p>
+      <p>用财报数据预测公司未来表现时，季度末与报表实际披露日之间常有间隔。若把尚未披露的指标提前放进历史样本，回测就会借用未来信息。按披露时间重新构造特征，并在后续时期比较预测及换手成本，可以判断结果中有多少来自可用信息。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

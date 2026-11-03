@@ -23,7 +23,8 @@
     <h1>数字逻辑电路</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>从逻辑门和布尔表达式出发，研究电路怎样完成运算与存储。组合电路的输出由当前输入确定，时序电路还需要考虑先前保存的状态。</p>
+      <p>数字逻辑电路把二进制信号与布尔运算联系起来。组合电路根据当前输入产生输出，可以用真值表、逻辑表达式和门电路图互相描述。触发器和寄存器引入记忆后，判断输出还需要知道之前保存的状态以及时钟何时采样。</p>
+      <p>从一个全加器可以看到逻辑与时间的区别。它接收两个操作数位和一个进位，输出和位与新的进位。把多个全加器串联，就能对多位数求和，但低位产生的进位要逐级传到高位。逻辑结果正确后，还要考虑它需要多久才能稳定。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

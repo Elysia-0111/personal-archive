@@ -23,7 +23,8 @@
     <h1>计算机系统结构</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究处理器、存储层次和并行机制的设计取舍。同一程序在不同机器上的性能差异，可以从指令并行、访存延迟与带宽等方面分析。</p>
+      <p>计算机系统结构研究怎样在面积、功耗和成本约束下提高性能。流水线让多条指令的不同阶段重叠，分支预测减少等待，缓存与多核并行则改变数据移动和协作的成本。评价一项设计时，需要同时观察指令吞吐量、访存行为及程序的实际运行时间。</p>
+      <p>如果一次处理耗时十秒，只有六秒花在可加速的计算上，把这部分速度提高一倍，总时间仍是七秒。剩余四秒可能用于访存或串行工作。先按执行时间拆分瓶颈，再判断增加计算单元或改善存储层次的收益，比单看峰值算力更有依据。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

@@ -23,7 +23,8 @@
     <h1>人工神经网络</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究神经网络如何通过可训练的参数从样本中学习映射。由单层模型扩展到多层网络时，可以追踪信号的前向计算与梯度更新。</p>
+      <p>人工神经网络把输入经过多层可调变换映射到输出。前向计算产生预测，损失函数衡量偏差，反向传播用链式法则计算每个参数对损失的影响。激活函数、初始化和学习率都会影响信号与梯度能否在层间有效传播。</p>
+      <p>当一个小网络训练多轮后损失几乎不变，可以先选一个参数做微小扰动，用损失的数值变化核对解析梯度，再观察各层激活值是否饱和。把实现错误、更新步长和模型容量逐项分开，比直接增加网络深度更能解释训练停滞的原因。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

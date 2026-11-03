@@ -23,7 +23,8 @@
     <h1>计算机图形学基础</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究三维几何如何映射成屏幕上的二维图像。从坐标变换、投影到可见性与着色，可以逐步追踪一个物体的最终外观。</p>
+      <p>计算机图形学研究怎样从几何模型生成图像。顶点从物体自身的坐标系变换到相机坐标系，经过投影后落到屏幕上。光栅化确定哪些像素被三角形覆盖，深度比较决定遮挡关系，材质、纹理与光照模型决定最终颜色。</p>
+      <p>让一盏灯绕着固定的立方体移动时，几何轮廓可以保持不变，表面的亮度和高光位置却会移动。改为移动相机，又会改变投影和可见面。分别追踪这两种变化，就能区分一个画面问题究竟来自坐标变换、可见性判断，还是着色计算。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

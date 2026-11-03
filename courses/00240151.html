@@ -23,7 +23,8 @@
     <h1>计算基因组分析</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>把基因组看作可计算的序列数据，了解序列比较、模式发现与结果解释。数据规模和测量误差会影响算法选择。</p>
+      <p>计算基因组分析把测序数据看作带误差的大量短序列。序列比对寻找可能的对应位置，组装尝试利用重叠片段恢复更长序列，变异分析再比较样本之间或样本与参考序列之间的差异。算法需要在搜索规模、匹配精度和不确定性之间取舍。</p>
+      <p>同一条测序读段若能匹配基因组中多处重复区域，它的原始位置就很难确定。较长读段、成对信息以及其他读段的支持能够缩小解释范围。判断一个疑似碱基差异是否值得进一步分析，可以结合碱基质量、支持它的独立读段数量及它们的匹配位置。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

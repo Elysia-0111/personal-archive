@@ -23,7 +23,8 @@
     <h1>深度学习及金融数据分析</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>研究神经网络如何从金融时间序列等数据中提取特征。评价一个模型时，除了观察训练误差，还要用后续时段的数据检查它在市场环境变化后的表现。</p>
+      <p>深度学习可以从金融时间序列或多源特征中学习表示。序列模型和注意力机制以不同方式利用历史窗口，输入尺度、目标期限与数据更新频率会改变模型看到的信号。金融数据常随市场环境变化，训练窗口和评估窗口的划分尤其重要。</p>
+      <p>预测未来数日波动幅度时，邻近日期的标签可能使用同一段未来行情。若随意打乱样本，这些重叠信息会穿过训练与测试的边界。按时间留出评估区间，仅用训练期估计归一化参数，再与历史波动等简单基准比较，才能判断复杂模型新增了多少信息。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">

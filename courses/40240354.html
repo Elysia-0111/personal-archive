@@ -23,7 +23,8 @@
     <h1>计算机组成原理</h1>
     <section class="course-intro" aria-labelledby="overview">
       <div class="section-head"><h2 id="overview">课程介绍</h2><small lang="en">OVERVIEW</small></div>
-      <p>沿着一条机器指令从取指、译码到执行的过程，理解处理器、存储器和输入输出设备怎样配合。缓存是其中一个切入点，它让数据放在哪里直接影响程序的运行时间。</p>
+      <p>计算机组成原理沿一条机器指令追踪硬件的分工。控制器解释指令，寄存器提供操作数，运算器执行计算，访存指令则把数据通路与存储系统连起来。缓存、主存和外设拥有不同的速度与接口，程序看到的读写背后可能经过多级传递。</p>
+      <p>以读取数组元素并加到累加器为例，处理器先计算地址，再取回数据，最后写入运算结果。连续读取邻近元素时，一个缓存行可能服务多次访问。改为大跨度读取后，即使执行相近数量的加法，等待数据的时间也可能明显增加。</p>
     </section>
     <div class="course-materials">
       <section aria-labelledby="references">
